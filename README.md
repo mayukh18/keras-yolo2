@@ -1,3 +1,16 @@
+# Improvements over experiencor/keras-yolo2
+
+- CutMix augmenter added in data generator.
+- MAP@K metric introduced.
+- MAP score and MAP@K metric scores available as callbacks. So the metrics can be monitored during training.
+- Loading annotations directly from pickle objects.
+- New sets of anchors.
+
+The rest of the things are same.
+
+The original README starts below:
+
+---
 # YOLOv2 in Keras and Applications
 
 This repo contains the implementation of YOLOv2 in Keras with Tensorflow backend. It supports training YOLOv2 network with various backends such as MobileNet and InceptionV3. Links to demo applications are shown below. Check out https://experiencor.github.io/yolo_demo/demo.html for a Raccoon Detector demo run entirely in brower with DeepLearn.js and MobileNet backend (it somehow breaks in Window). Source code of this demo is located at https://git.io/vF7vG.
